@@ -1,43 +1,43 @@
 # Node Plantilla
 
-## 🚀 Descripción
-Plantilla base para proyectos con Node.js y Express, lista para desarrollo con nodemon.
-
-## 📂 Estructura del proyecto
-src/
-├── index.js # Punto de entrada del servidor
-├── routes/ # Definición de rutas (endpoints)
-├── controllers/ # Controladores: lógica de negocio
-├── services/ # Servicios auxiliares
-├── models/ # Modelos de datos
-├── middlewares/ # Middlewares personalizados
-└── config/ # Configuraciones generales
-
-## 🧠 Scripts disponibles
-- `npm start` → Inicia el servidor normalmente.
-- `npm run dev` → Inicia el servidor con **nodemon** (reinicio automático).
-
-## 📦 Requisitos
-- Node.js
-- npm
-- Git
-
-## 🌐 Ejecución
-```bash
-npm install
-npm run dev
-Abre: 
-
-yaml
-Copiar código
+## Descripción
+Este proyecto es una **plantilla base para aplicaciones Node.js con Express**, pensada para iniciar desarrollos de APIs de forma rápida y organizada.  
+Incluye la estructura de carpetas más común y scripts configurados para ejecución en modo desarrollo con **nodemon**.
 
 ---
 
-## 🪣 **9. Hacer commit y push**
+## Requisitos previos
+Antes de ejecutar este proyecto, asegúrate de tener instalado:
 
-```bash
-git add .
-git commit -m "Proyecto base Node con estructura y scripts"
-git branch -M main
-git remote add origin https://github.com/tu-usuario/node-plantilla.git
-git push -u origin main
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+
+---
+
+## Estructura del proyecto
+node-plantilla/
+│
+├── src/
+│ ├── index.js # Punto de entrada principal del servidor
+│ ├── routes/ # Archivos con las rutas (endpoints) de la API
+│ │ └── index.js
+│ ├── controllers/ # Controladores que manejan la lógica de negocio
+│ │ └── placeholder.js
+│ ├── services/ # Servicios auxiliares (por ejemplo, conexión a BD)
+│ ├── models/ # Modelos de datos o esquemas
+│ ├── middlewares/ # Funciones intermedias (autenticación, validación, etc.)
+│ └── config/ # Archivos de configuración (variables, entorno, etc.)
+│
+├── package.json # Configuración de dependencias y scripts
+└── README.md # Documentación del proyecto
+
+## 🧠 Scripts disponibles
+
+En el archivo `package.json` se definieron los siguientes scripts:
+
+```json
+"scripts": {
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js"
+}
