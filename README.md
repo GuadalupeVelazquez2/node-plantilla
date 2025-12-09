@@ -32,7 +32,7 @@ node-plantilla/
 ├── package.json # Configuración de dependencias y scripts
 └── README.md # Documentación del proyecto
 
-## 🧠 Scripts disponibles
+## Scripts disponibles
 
 En el archivo `package.json` se definieron los siguientes scripts:
 
